@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull
 class GithubActionsRunHighlighterInjector : MultiHostInjector {
     override fun getLanguagesToInject(@NotNull registrar: MultiHostRegistrar, @NotNull context: PsiElement) {
         val virtualFile = context.containingFile.virtualFile ?: return
-        if (!virtualFile.path.contains(".github/workflows/")) return
+        if (!virtualFile.path.contains(".github/")) return
 
         if (context is YAMLScalar) {
             val runKeyValue = context.parent as? YAMLKeyValue ?: return

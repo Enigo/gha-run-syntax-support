@@ -19,16 +19,14 @@ repositories {
 dependencies {
     intellijPlatform {
         create("IU", "2025.1")
-        testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
-        testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.JUnit5)
-        testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Plugin.Java)
-
         bundledPlugin("org.jetbrains.plugins.yaml")
+
+        testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
+        testBundledPlugins("com.intellij.modules.json", "com.jetbrains.sh", "org.jetbrains.plugins.github", "org.toml.lang")
+        testPlugin("PythonCore", "251.26927.70")
     }
 
     testImplementation(kotlin("test"))
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.2")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.2")
     testImplementation("org.assertj:assertj-core:3.25.1")
 }
 

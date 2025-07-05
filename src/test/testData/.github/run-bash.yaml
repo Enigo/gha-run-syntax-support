@@ -1,0 +1,6 @@
+jobs:
+  build:
+    steps:
+      - name: Check bash
+        run: |
+          echo "hello"<caret>

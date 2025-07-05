@@ -1,0 +1,7 @@
+jobs:
+  build:
+    steps:
+      - name: Check python
+        shell: python
+        run: |
+          print("Hello, World!")<caret>

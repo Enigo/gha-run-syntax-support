@@ -16,6 +16,7 @@ jobs:
         with:
           distribution: 'corretto'
           java-version: '21'
+          cache: 'gradle'
 
       - name: Build Plugin
         run: ./gradlew buildPlugin

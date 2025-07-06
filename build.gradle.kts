@@ -6,8 +6,8 @@ plugins {
     id("org.jetbrains.intellij.platform") version "2.6.0"
 }
 
-group = "com.gha-run-syntax-support"
-version = "0.2"
+group = "com.gha-workflow-plugins.run-syntax-support"
+version = "0.3"
 
 repositories {
     mavenCentral()
@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     intellijPlatform {
-        create("IU", "2025.1")
+        create("IU", "2024.3")
         bundledPlugin("org.jetbrains.plugins.yaml")
 
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
@@ -33,7 +33,7 @@ dependencies {
 intellijPlatform {
     pluginConfiguration {
         ideaVersion {
-            sinceBuild = "251"
+            sinceBuild = "243"
         }
 
         changeNotes = """

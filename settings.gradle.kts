@@ -1,1 +1,1 @@
-rootProject.name = "gha-run-syntax-support"
+rootProject.name = "run-syntax-support"

@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 64 64">
-    <rect width="64" height="64" rx="12" fill="#24292e"/>
-    <circle cx="32" cy="32" r="20" fill="#2d333b" stroke="#ffffff" stroke-width="2"/>
-    <!-- Highlighter shape -->
-    <g transform="translate(32,32) rotate(-45) translate(-32,-32)" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="28" y="20" width="8" height="16" rx="1" ry="1" fill="#f0f0f0" stroke="#ffffff"/>
-        <path d="M28 36 L24 40 L28 44" /> <!-- tip -->
+    <circle cx="32" cy="32" r="28" fill="none" stroke="#000" stroke-width="3"/>
+    <g transform="translate(32,32) scale(1.6) rotate(-45) translate(-32,-32)" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="28" y="20" width="8" height="16" rx="2" ry="2" fill="none" stroke="#000"/>
+        <path d="M28 36 L24 40 L28 44" stroke="#000" fill="none"/>
     </g>
 </svg>
